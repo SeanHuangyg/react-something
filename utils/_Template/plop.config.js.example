@@ -1,0 +1,3 @@
+module.exports = {
+    userName: 'SET_YOUR_USERNAME'
+};
