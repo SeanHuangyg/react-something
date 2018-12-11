@@ -8,7 +8,7 @@
 3) 项目自定义的扩展 yes/no (不影响)
 4) 然后你就会在目录里看到生成的模板
 ## plop
-基本：（官文上面的）
+
 ### 基本：（官文上面的）
 ``` javascript
 module.exports = function (plop) {
