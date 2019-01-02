@@ -5,6 +5,7 @@ import Index from './HomeComponent/index';
 import FirstComponent from './FirstComponent/index';
  
 ReactDOM.render(
+    // component
     <div>
         <BrowserRouter>
             <Switch>
