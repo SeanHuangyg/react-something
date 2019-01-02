@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "linters": {
-      "src/*.js": [
+      "src/**/*.js": [
         "./node_modules/.bin/eslint --fix",
         "git add"
       ]
