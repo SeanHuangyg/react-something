@@ -11,11 +11,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint \"src/**/*.{js,vue,wpy}\""
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,jsx}": [
+        "prettier --tab-width 4 --write",
+        "eslint --fix",
+        "git add"
+      ]
     }
   },
   "eslintConfig": {
