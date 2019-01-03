@@ -11,15 +11,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "eject": "react-scripts eject"
   },
-  "lint-staged": {
-    "linters": {
-      "src/**/*.js": [
-        "./node_modules/.bin/eslint --fix",
-        "git add"
-      ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint \"src/**/*.{js,vue,wpy}\""
     }
   },
   "eslintConfig": {

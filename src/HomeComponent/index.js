@@ -5,6 +5,9 @@ class App extends Component {
   
   componentWillMount() {
     let a = 1
+    if(typeof a === 'string'){
+      console.log('string')
+    }
   }
   
   render() {
