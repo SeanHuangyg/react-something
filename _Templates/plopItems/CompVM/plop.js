@@ -18,8 +18,8 @@ module.exports = function (plop, data) {
         actions: [{
             type: 'add',
             data,
-            path: '{{currentPath}}/{{properCase compName}}Component/index.js',
-            templateFile: npath.resolve(__dirname, 'index.js.hbs')
+            path: '{{currentPath}}/{{properCase compName}}Component/index.jsx',
+            templateFile: npath.resolve(__dirname, 'index.jsx.hbs')
         }, {
             type: 'add',
             data,
