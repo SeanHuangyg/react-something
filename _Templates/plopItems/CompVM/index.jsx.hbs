@@ -9,20 +9,20 @@ import React, { Component } from 'react';
 import './index.css';
 
 class App extends Component {
-    // 是否需要输入一个自定义的东东 {{shouldInject}}
-    {{#if (eq shouldInject 'yes')}}
-    static shouldInject = true;
-    {{else}}
-    // static shouldInject = true;
-    {{/if}}
+  // 是否需要输入一个自定义的东东 {{shouldInject}}
+  {{#if (eq shouldInject 'yes')}}
+  static shouldInject = true;
+  {{else}}
+  // static shouldInject = true;
+  {{/if}}
 
-    render() {
-        return (
-            <div className='{{dashCase compName}}Component'>
-                Hello {{properCase compName}}Component!
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="{{dashCase compName}}Component">
+        Hello {{properCase compName}}Component!
+      </div>
+    );
+  }
 }
 
 export default App;
